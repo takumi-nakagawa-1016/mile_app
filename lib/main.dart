@@ -3,8 +3,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:helloworld/widget/page/callender_page.dart';
+import 'package:helloworld/widget/page/first_page.dart';
 import 'package:helloworld/widget/page/home_page.dart';
 import 'package:helloworld/widget/page/milestone_page.dart';
+import 'package:helloworld/widget/page/register_page.dart';
 
 import 'firebase_options.dart';
 void main() async {
@@ -29,7 +31,10 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => MilestonePage(),
+        '/': (context) => FirstPage(),
+        '/register': (context) => FirstPage(),
+        '/login': (context) => RegisterPage(),
+        '/first': (context) => FirstPage(),
         '/home': (context) => HomePage(),
         '/calender': (context) => CalenderPage()
       },

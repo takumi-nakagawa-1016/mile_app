@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:helloworld/const/roote_path.dart';
+import 'package:helloworld/const/route_path.dart';
 import 'package:helloworld/utility/route_util.dart';
 
 PreferredSize customFooter(context) {

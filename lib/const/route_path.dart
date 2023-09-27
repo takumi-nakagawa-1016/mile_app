@@ -2,6 +2,9 @@ enum RoutePath {
   milestone,
   calender,
   home,
+  register,
+  first,
+  login,
 }
 
 extension RoutePathExtension on RoutePath {
@@ -9,6 +12,12 @@ extension RoutePathExtension on RoutePath {
     switch (this) {
       case RoutePath.milestone:
         return '/';
+      case RoutePath.register:
+        return '/register';
+      case RoutePath.first:
+        return '/first';
+      case RoutePath.login:
+        return '/login';
       case RoutePath.calender:
         return '/calender';
       case RoutePath.home:
